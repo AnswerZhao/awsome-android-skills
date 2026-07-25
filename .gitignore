@@ -1,0 +1,9 @@
+# Dev artifacts (specs, todos, test fixtures, eval results)
+devdoc/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# OS noise
+.DS_Store
