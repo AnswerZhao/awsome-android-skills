@@ -9,7 +9,7 @@ Agent Skill 是模块化的 `SKILL.md` 指令文件，教会 AI 编码助手（C
 ## 目录
 
 - [官方 Skills](#官方-skills) —— 由 Android 团队维护，见 [android/skills](https://github.com/android/skills)
-  - [构建](#构建) · [相机](#相机) · [端侧 AI](#端侧-ai) · [开发工具](#开发工具) · [身份认证](#身份认证) · [Jetpack Compose](#jetpack-compose) · [导航](#导航) · [性能](#性能) · [Play](#play) · [性能分析器](#性能分析器) · [安全](#安全) · [系统](#系统) · [测试](#测试) · [Wear](#wear) · [XR](#xr)
+  - [Jetpack Compose](#jetpack-compose) · [构建](#构建) · [开发工具](#开发工具) · [性能](#性能) · [性能分析器](#性能分析器) · [测试](#测试) · [导航](#导航) · [系统](#系统) · [Play](#play) · [安全](#安全) · [相机](#相机) · [身份认证](#身份认证) · [端侧 AI](#端侧-ai) · [Wear](#wear) · [XR](#xr)
 - [社区 Skills](#社区-skills) —— 本仓库收录
 - [使用本仓库的 Skills](#使用本仓库的-skills)
 - [贡献](#贡献)
@@ -18,62 +18,62 @@ Agent Skill 是模块化的 `SKILL.md` 指令文件，教会 AI 编码助手（C
 
 由 Android 团队维护 → [github.com/android/skills](https://github.com/android/skills)。可通过 `android` CLI 安装，或将对应 skill 目录复制到你的 agent 技能目录。
 
+### Jetpack Compose
+
+- [migrate-xml-views-to-jetpack-compose](https://github.com/android/skills/tree/main/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose) —— XML View 迁移到 Jetpack Compose 的结构化工作流。
+- [adaptive](https://github.com/android/skills/tree/main/jetpack-compose/adaptive) —— 让 UI 适配不同屏幕尺寸与设备形态。
+- [styles](https://github.com/android/skills/tree/main/jetpack-compose/theming/styles) —— 在应用中集成 Jetpack Compose Styles API。
+
 ### 构建
 
 - [agp-9-upgrade](https://github.com/android/skills/tree/main/build/agp/agp-9-upgrade) —— 将 Android 项目升级/迁移到 Android Gradle Plugin 9。
-
-### 相机
-
-- [camerax](https://github.com/android/skills/tree/main/camera/camerax) —— CameraX 相机开发技术指导。
-
-### 端侧 AI
-
-- [appfunctions](https://github.com/android/skills/tree/main/device-ai/appfunctions) —— 分析应用、识别关键用户流程并通过 AppFunctions 暴露。
 
 ### 开发工具
 
 - [android-cli](https://github.com/android/skills/tree/main/devtools/android-cli) —— 安装与使用 `android` CLI：创建项目、在设备上运行应用、管理工具链。
 
-### 身份认证
-
-- [verified-email](https://github.com/android/skills/tree/main/identity/verified-email) —— 实现验证邮箱获取的完整工作流。
-
-### Jetpack Compose
-
-- [adaptive](https://github.com/android/skills/tree/main/jetpack-compose/adaptive) —— 让 UI 适配不同屏幕尺寸与设备形态。
-- [migrate-xml-views-to-jetpack-compose](https://github.com/android/skills/tree/main/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose) —— XML View 迁移到 Jetpack Compose 的结构化工作流。
-- [styles](https://github.com/android/skills/tree/main/jetpack-compose/theming/styles) —— 在应用中集成 Jetpack Compose Styles API。
-
-### 导航
-
-- [navigation-3](https://github.com/android/skills/tree/main/navigation/navigation-3) —— 安装并迁移到 Jetpack Navigation 3。
-
 ### 性能
 
 - [r8-analyzer](https://github.com/android/skills/tree/main/performance/r8-analyzer) —— 分析构建文件与 R8 keep 规则，找出冗余与混淆裁剪问题。
-
-### Play
-
-- [engage-sdk-integration](https://github.com/android/skills/tree/main/play/engage-sdk-integration) —— 集成、调试并解决 Play Engage SDK 的实现问题。
-- [play-billing-library-version-upgrade](https://github.com/android/skills/tree/main/play/play-billing-library-version-upgrade) —— 将项目升级/迁移到更新的 Play Billing Library 版本。
-- [play-policy-insights](https://github.com/android/skills/tree/main/play/play-policy-insights) —— 按 Google Play 政策域审计应用；交叉比对静态代码分析与 Play Console 声明，生成合规报告。
 
 ### 性能分析器
 
 - [perfetto-sql](https://github.com/android/skills/tree/main/profilers/perfetto-sql) —— 将自然语言问题翻译成合法的 PerfettoSQL 查询。
 - [perfetto-trace-analysis](https://github.com/android/skills/tree/main/profilers/perfetto-trace-analysis) —— 分析 Perfetto trace，定位延迟、内存或卡顿问题的根因。
 
-### 安全
+### 测试
 
-- [android-intent-security](https://github.com/android/skills/tree/main/security/android-intent-security) —— 审计与加固 Android Intent 使用的最佳实践。
+- [testing-setup](https://github.com/android/skills/tree/main/testing/testing-setup) —— 分析项目并为原生 Android 应用制定测试策略。
+
+### 导航
+
+- [navigation-3](https://github.com/android/skills/tree/main/navigation/navigation-3) —— 安装并迁移到 Jetpack Navigation 3。
 
 ### 系统
 
 - [edge-to-edge](https://github.com/android/skills/tree/main/system/edge-to-edge) —— 将 Jetpack Compose 应用迁移到自适应 edge-to-edge 显示。
 
-### 测试
+### Play
 
-- [testing-setup](https://github.com/android/skills/tree/main/testing/testing-setup) —— 分析项目并为原生 Android 应用制定测试策略。
+- [play-billing-library-version-upgrade](https://github.com/android/skills/tree/main/play/play-billing-library-version-upgrade) —— 将项目升级/迁移到更新的 Play Billing Library 版本。
+- [play-policy-insights](https://github.com/android/skills/tree/main/play/play-policy-insights) —— 按 Google Play 政策域审计应用；交叉比对静态代码分析与 Play Console 声明，生成合规报告。
+- [engage-sdk-integration](https://github.com/android/skills/tree/main/play/engage-sdk-integration) —— 集成、调试并解决 Play Engage SDK 的实现问题。
+
+### 安全
+
+- [android-intent-security](https://github.com/android/skills/tree/main/security/android-intent-security) —— 审计与加固 Android Intent 使用的最佳实践。
+
+### 相机
+
+- [camerax](https://github.com/android/skills/tree/main/camera/camerax) —— CameraX 相机开发技术指导。
+
+### 身份认证
+
+- [verified-email](https://github.com/android/skills/tree/main/identity/verified-email) —— 实现验证邮箱获取的完整工作流。
+
+### 端侧 AI
+
+- [appfunctions](https://github.com/android/skills/tree/main/device-ai/appfunctions) —— 分析应用、识别关键用户流程并通过 AppFunctions 暴露。
 
 ### Wear
 
