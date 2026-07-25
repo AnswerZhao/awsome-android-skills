@@ -1,5 +1,7 @@
 # Awesome Android Skills [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> English | [中文](README.cn.md)
+
 > A curated collection of agent skills for Android development — official skills from the Android team plus hand-picked community skills.
 
 Agent Skills are modular `SKILL.md` instruction files that teach AI coding agents (Claude Code, Gemini CLI, Cursor, etc.) how to perform specific Android tasks — loaded on demand, grounded in current best practices.
