@@ -9,7 +9,7 @@ Agent Skills are modular `SKILL.md` instruction files that teach AI coding agent
 ## Contents
 
 - [Official Skills](#official-skills) — maintained by the Android team at [android/skills](https://github.com/android/skills)
-  - [Jetpack Compose](#jetpack-compose) · [Build](#build) · [DevTools](#devtools) · [Performance](#performance) · [Profilers](#profilers) · [Testing](#testing) · [Navigation](#navigation) · [System](#system) · [Play](#play) · [Security](#security) · [Camera](#camera) · [Identity](#identity) · [Device AI](#device-ai) · [Wear](#wear) · [XR](#xr)
+  - [Compose & UI](#compose--ui) · [Build & Toolchain](#build--toolchain) · [Performance & Profiling](#performance--profiling) · [App Development](#app-development) · [Play Store](#play-store) · [New Form Factors & On-Device AI](#new-form-factors--on-device-ai)
 - [Community Skills](#community-skills) — included in this repo
 - [Using the Skills in This Repo](#using-the-skills-in-this-repo)
 - [Contributing](#contributing)
@@ -18,69 +18,42 @@ Agent Skills are modular `SKILL.md` instruction files that teach AI coding agent
 
 Maintained by the Android team → [github.com/android/skills](https://github.com/android/skills). Install via the `android` CLI or copy the skill directory into your agent's skills folder.
 
-### Jetpack Compose
+### Compose & UI
 
 - [migrate-xml-views-to-jetpack-compose](https://github.com/android/skills/tree/main/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose) — Structured workflow for migrating XML Views to Jetpack Compose.
 - [adaptive](https://github.com/android/skills/tree/main/jetpack-compose/adaptive) — Make or update UI so it adapts to different screen sizes and form factors.
 - [styles](https://github.com/android/skills/tree/main/jetpack-compose/theming/styles) — Integrate the Jetpack Compose Styles API into an app.
+- [edge-to-edge](https://github.com/android/skills/tree/main/system/edge-to-edge) — Migrate a Jetpack Compose app to adaptive edge-to-edge display.
 
-### Build
+### Build & Toolchain
 
 - [agp-9-upgrade](https://github.com/android/skills/tree/main/build/agp/agp-9-upgrade) — Upgrade or migrate an Android project to Android Gradle Plugin 9.
-
-### DevTools
-
 - [android-cli](https://github.com/android/skills/tree/main/devtools/android-cli) — Install and use the `android` CLI: create projects, run apps on devices, manage the toolchain.
 
-### Performance
+### Performance & Profiling
 
 - [r8-analyzer](https://github.com/android/skills/tree/main/performance/r8-analyzer) — Analyze build files and R8 keep rules to find redundancies and shrinking issues.
-
-### Profilers
-
 - [perfetto-sql](https://github.com/android/skills/tree/main/profilers/perfetto-sql) — Translate natural-language questions into valid PerfettoSQL queries.
 - [perfetto-trace-analysis](https://github.com/android/skills/tree/main/profilers/perfetto-trace-analysis) — Analyze Perfetto traces to root-cause latency, memory, or jank issues.
 
-### Testing
-
-- [testing-setup](https://github.com/android/skills/tree/main/testing/testing-setup) — Analyze a project and create a testing strategy for native Android apps.
-
-### Navigation
+### App Development
 
 - [navigation-3](https://github.com/android/skills/tree/main/navigation/navigation-3) — Install and migrate to Jetpack Navigation 3.
+- [testing-setup](https://github.com/android/skills/tree/main/testing/testing-setup) — Analyze a project and create a testing strategy for native Android apps.
+- [camerax](https://github.com/android/skills/tree/main/camera/camerax) — Technical guidance for Android camera development with CameraX.
+- [verified-email](https://github.com/android/skills/tree/main/identity/verified-email) — Complete workflow for implementing verified email retrieval.
+- [android-intent-security](https://github.com/android/skills/tree/main/security/android-intent-security) — Best practices for auditing and hardening Android Intent usage.
 
-### System
-
-- [edge-to-edge](https://github.com/android/skills/tree/main/system/edge-to-edge) — Migrate a Jetpack Compose app to adaptive edge-to-edge display.
-
-### Play
+### Play Store
 
 - [play-billing-library-version-upgrade](https://github.com/android/skills/tree/main/play/play-billing-library-version-upgrade) — Upgrade or migrate a project to a newer Play Billing Library version.
 - [play-policy-insights](https://github.com/android/skills/tree/main/play/play-policy-insights) — Audit an app against Google Play policy domains; cross-references static analysis with Play Console declarations into a compliance report.
 - [engage-sdk-integration](https://github.com/android/skills/tree/main/play/engage-sdk-integration) — Integrate, debug, and resolve Play Engage SDK implementation issues.
 
-### Security
-
-- [android-intent-security](https://github.com/android/skills/tree/main/security/android-intent-security) — Best practices for auditing and hardening Android Intent usage.
-
-### Camera
-
-- [camerax](https://github.com/android/skills/tree/main/camera/camerax) — Technical guidance for Android camera development with CameraX.
-
-### Identity
-
-- [verified-email](https://github.com/android/skills/tree/main/identity/verified-email) — Complete workflow for implementing verified email retrieval.
-
-### Device AI
+### New Form Factors & On-Device AI
 
 - [appfunctions](https://github.com/android/skills/tree/main/device-ai/appfunctions) — Analyze an app to identify key user workflows and expose them via AppFunctions.
-
-### Wear
-
 - [wear-compose-m3](https://github.com/android/skills/tree/main/wear/wear-compose-m3) — Expert guidance for Wear OS Compose Material3 development.
-
-### XR
-
 - [display-glasses-with-jetpack-compose-glimmer](https://github.com/android/skills/tree/main/xr/display-glasses-with-jetpack-compose-glimmer) — Guidelines for building projected Android XR apps for display glasses with Jetpack Compose Glimmer.
 
 ## Community Skills
