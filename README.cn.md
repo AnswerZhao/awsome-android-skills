@@ -64,6 +64,14 @@ Agent Skill 是模块化的 `SKILL.md` 指令文件，教会 AI 编码助手（C
 - [zwdroid-android-jadx](skills/zwdroid-android-jadx/) —— 使用 jadx 反编译 Android APK / dex / jar / aar；将 logcat 与源码交叉引用以定位 Bug。
 - [zwdroid-android-logcat-analysis](skills/zwdroid-android-logcat-analysis/) —— 解析 Android/AAOS logcat（threadtime 格式）；结构化事件索引、时间线、异常信号检测，playbook 驱动的 framework 问题诊断。
 
+### 外部社区项目
+
+与 Android agent skill 相关的优秀社区项目（未收录进本仓库）：
+
+- [SmartPerfetto](https://github.com/Gracker/SmartPerfetto) —— AI 辅助的 Perfetto trace 分析平台：Web UI（Fork 的 Perfetto UI + AI 助手插件）、`smp` CLI，以及分层 YAML skill 系统（atomic/composite/deep/comparison/module），覆盖启动、滑动卡顿、ANR、内存、Binder、热节流、渲染管线等场景。AGPL-3.0。
+- [Perfetto-Skills](https://github.com/Gracker/Perfetto-Skills) —— 便携式 agent skill，将 SmartPerfetto 的分析工作流独立打包（不依赖其后端/UI）：`perfetto-performance-analysis` 路由 skill 含 14 个工作流、198 个可执行 skill、637 条精选 SQL 查询；可通过 `skills` CLI 安装到 Claude Code、Codex、OpenCode。AGPL-3.0 / Apache-2.0。
+- [perfetto-tools](https://github.com/Gracker/perfetto-tools) —— 可复现的 Android Perfetto 抓取、FPS 测量与 Simpleperf 工作流：固定版本的工具链（Platform-Tools、Perfetto v57.2）、一键抓 trace 脚本、6 个预置 trace 配置、自动滑动 FPS 报告。Apache-2.0。
+
 ## 使用本仓库的 Skills
 
 本仓库的 `.claude/skills/` 会在你在仓库目录内启动 Claude Code 会话时，作为**项目级技能**自动加载：

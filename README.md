@@ -64,6 +64,14 @@ Skills included in this repo (source in [`skills/`](skills/)), authored by [zwdr
 - [zwdroid-android-jadx](skills/zwdroid-android-jadx/) — 使用 jadx 反编译 Android APK / dex / jar / aar；将 logcat 与源码交叉引用以定位 Bug。
 - [zwdroid-android-logcat-analysis](skills/zwdroid-android-logcat-analysis/) — 解析 Android/AAOS logcat（threadtime 格式）；结构化事件索引、时间线、异常信号检测，playbook 驱动的 framework 问题诊断。
 
+### External Community Projects
+
+Notable community projects related to Android agent skills (not included in this repo):
+
+- [SmartPerfetto](https://github.com/Gracker/SmartPerfetto) — AI-assisted Perfetto trace analysis platform: Web UI (forked Perfetto UI + AI assistant plugin), `smp` CLI, and a layered YAML skill system (atomic/composite/deep/comparison/module skills) covering startup, scrolling jank, ANR, memory, Binder, thermal, and rendering-pipeline scenarios. AGPL-3.0.
+- [Perfetto-Skills](https://github.com/Gracker/Perfetto-Skills) — Portable agent skill packaging SmartPerfetto's analysis workflows without its backend/UI: a `perfetto-performance-analysis` router skill with 14 workflows, 198 executable skills, and 637 curated SQL queries; installable via the `skills` CLI into Claude Code, Codex, or OpenCode. AGPL-3.0 / Apache-2.0.
+- [perfetto-tools](https://github.com/Gracker/perfetto-tools) — Reproducible Android Perfetto capture, FPS measurement, and Simpleperf workflows: pinned toolchain (Platform-Tools, Perfetto v57.2), one-click trace capture scripts, 6 preset trace configs, and automated scroll FPS reports. Apache-2.0.
+
 ## Using the Skills in This Repo
 
 The repo's `.claude/skills/` is auto-loaded by Claude Code as **project-scoped skills** when you start a session inside the repo:
